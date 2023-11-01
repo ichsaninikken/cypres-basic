@@ -32,7 +32,8 @@ describe('User Can Edit Existing Data', () => {
       .and('contain', 'User Berhasil Diupdate');
   })
 
-  //UTS
+  //Soal UTS (Mengedit data user baru dan Mengedit data User)
+  //Mengedit data user baru
   it('User can edit existing data (User baru)', () => {
     cy.get('.table td')
       .contains('user baru')
@@ -48,7 +49,8 @@ describe('User Can Edit Existing Data', () => {
       .should('be.visible')
       .and('have.class', 'alert-success')
       .and('contain', 'User Berhasil Diupdate');
-  })  
+  })
+  //Mengedit data User  
   it('User can edit existing data (user)', () => {
     cy.get('.table td')
       .contains('user edited')
