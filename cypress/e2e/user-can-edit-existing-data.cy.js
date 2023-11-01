@@ -1,5 +1,4 @@
 describe('User Can Edit Existing Data', () => {
-  //after each test case
   afterEach(() => {
     cy.exec('cd ../demo-app-cypress-automation && php artisan migrate:fresh --seed');
   });
